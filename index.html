@@ -50,15 +50,15 @@
             text-align: center;
         }
         .info-section {
-            margin-bottom: 15px;
-            font-size: 0.9rem; /* 缩小字体大小 */
-            line-height: 1.4; /* 调整行间距 */
+            margin-bottom: 10px;
+            font-size: 0.65rem;
+            line-height: 1.3; 
         }
         .info-section p {
-            margin-bottom: 0.5rem; /* 减小段落间距 */
+            margin-bottom: 0.3rem; 
         }
         .info-section strong {
-            font-size: 0.95rem; /* 标题稍大一点 */
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -90,7 +90,7 @@
                     <p>Spirited Away overtook Titanic's box office record in Japan when released.</p>
                 </div>
                 
-                <!-- 按钮 -->
+                
                 <div class="button-group mt-3">
                     <button type="button" class="btn btn-lg description-btn" onclick="showInfo('description')">Description</button>
                     <button type="button" class="btn btn-lg cast-btn" onclick="showInfo('cast')">Cast</button>
@@ -100,8 +100,7 @@
         </div>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -114,7 +113,7 @@
             document.getElementById(infoType).style.display = 'block';
         }
         
-        // 默认显示描述内容
+        
         document.addEventListener('DOMContentLoaded', function() {
             showInfo('description');
         });
